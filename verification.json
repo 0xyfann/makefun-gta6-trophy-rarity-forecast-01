@@ -1,0 +1,146 @@
+{
+  "node": "v22.18.0",
+  "main_bytes": 14526,
+  "practice_answer_available": false,
+  "score_status": "unavailable: official practice answers are not shipped in the kit",
+  "cases": [
+    {
+      "case": "p00",
+      "trophies": 55,
+      "output_bytes": 3273,
+      "milliseconds_two_runs": [
+        461.6291819999999,
+        433.900973
+      ],
+      "deterministic": true,
+      "valid": true,
+      "official": null
+    },
+    {
+      "case": "p01",
+      "trophies": 55,
+      "output_bytes": 3325,
+      "milliseconds_two_runs": [
+        376.8464270000002,
+        518.7669780000001
+      ],
+      "deterministic": true,
+      "valid": true,
+      "official": null
+    }
+  ],
+  "official_aggregate": null,
+  "scorer_checks": "published example, equal-quantile absolute error, boundary clamp: PASS",
+  "synthetic_checks": {
+    "checks": [
+      "null rates and exact 0/100",
+      "missing/unrelated trophy cannot fabricate population refresh",
+      "restored rate after missing population refresh is retained",
+      "multi-refresh 6510-minute final horizon",
+      "held-out synthetic adoption trajectory improves on persistence",
+      "plateau polling-frequency invariance",
+      "post-checkpoint reads excluded",
+      "unsorted history",
+      "latest missing trophy uses previous observation"
+    ],
+    "final_adoption_test": {
+      "ours": {
+        "loss": 0.2953472100592436,
+        "typical_miss_pp": 1.3277866363636368,
+        "coverage_90": 1,
+        "trophies": 55
+      },
+      "baseline": {
+        "loss": 0.8811875621629586,
+        "typical_miss_pp": 3.8650909090909082,
+        "coverage_90": 0.9818181818181818,
+        "trophies": 55
+      }
+    }
+  },
+  "batch_matches_isolated": true,
+  "large_history_test": {
+    "synthetic": true,
+    "unique_refreshes": 1000,
+    "trophies": 55,
+    "milliseconds_two_runs": [
+      583.210106,
+      662.8444940000004
+    ],
+    "output_bytes": 3364,
+    "valid": true,
+    "deterministic": true
+  },
+  "stress_tests_NOT_OFFICIAL_PRACTICE": {
+    "no_refresh": {
+      "ours": {
+        "loss": 1.1175450000256226,
+        "typical_miss_pp": 0.7201894181818184,
+        "coverage_90": 0.01818181818181818,
+        "trophies": 110
+      },
+      "baseline": {
+        "loss": 0.02485426791593037,
+        "typical_miss_pp": 0.00018181818181827483,
+        "coverage_90": 0.9818181818181818,
+        "trophies": 110
+      }
+    },
+    "hypothetical_population_x2_fixed_holders": {
+      "ours": {
+        "loss": 0.5777649312212364,
+        "typical_miss_pp": 0.2858257818181819,
+        "coverage_90": 1,
+        "trophies": 110
+      },
+      "baseline": {
+        "loss": 0.5959099461845699,
+        "typical_miss_pp": 0.43454545454545473,
+        "coverage_90": 0,
+        "trophies": 110
+      }
+    },
+    "hypothetical_population_x4_fixed_holders": {
+      "ours": {
+        "loss": 0.24994985667709166,
+        "typical_miss_pp": 0.06864396363636362,
+        "coverage_90": 1,
+        "trophies": 110
+      },
+      "baseline": {
+        "loss": 1.2786341059456767,
+        "typical_miss_pp": 0.6517272727272729,
+        "coverage_90": 0,
+        "trophies": 110
+      }
+    },
+    "hypothetical_population_x6_fixed_holders": {
+      "ours": {
+        "loss": 0.1865222934578973,
+        "typical_miss_pp": 0.009647684848484848,
+        "coverage_90": 1,
+        "trophies": 110
+      },
+      "baseline": {
+        "loss": 1.6774525091280943,
+        "typical_miss_pp": 0.7241212121212117,
+        "coverage_90": 0,
+        "trophies": 110
+      }
+    },
+    "hypothetical_population_x10_fixed_holders": {
+      "ours": {
+        "loss": 0.2820837194461161,
+        "typical_miss_pp": 0.06166512727272731,
+        "coverage_90": 1,
+        "trophies": 110
+      },
+      "baseline": {
+        "loss": 2.1795702868641444,
+        "typical_miss_pp": 0.7820363636363634,
+        "coverage_90": 0,
+        "trophies": 110
+      }
+    }
+  }
+}

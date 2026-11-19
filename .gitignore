@@ -1,0 +1,14 @@
+# Generated forecasts and local test runtimes.
+out/
+.local-runtime/
+.local-tmp/
+node_modules/
+
+# Submission bundles and credentials must stay outside the source snapshot.
+transcripts/
+*.tar.gz
+*.gitbundle
+.env
+.env.*
+wallet.json
+*-keypair.json
